@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width,
         initial-scale=1.0"/>
         <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css"/>
         <link rel="stylesheet" href="./css/common.css"/>
         <link rel="stylesheet" href="./css/styles.css"/>
@@ -416,9 +417,24 @@
                         </use>
                     </svg>
                 </button>
-                <div class="modal-content">
-                    <p>ffgghhjhj</p>
-                </div>
+                <form class="modal-content" action="#" method="get">
+                    <h2 class="modal-header">
+                        Оставьте свои данные, мы вам перезвоним
+                    </h2>
+                    <label class="modal-label" for="name">Имя</label>
+                    <input class="modal-iput" type="text" name="name" id="name">
+                    <label class="modal-label" for="phone">Телефон</label>
+                    <input class="modal-iput" type="tel" name="phone" id="phone">
+                    <label class="modal-label" for="mail">Почта</label>
+                    <input class="modal-iput" type="email" name="mail" id="mail">
+                    <label class="modal-label" for="comment">Комментарий</label>
+                    <textarea class="modal-comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                    <input class="modal-checkbox" type="checkbox" name="submit-agreement" id="submit-agreement">
+                    <label class="checkbox modal-label" for="submit-agreement">
+                        Соглашаюсь с рассылкой и принимаю <a href="#" class="modal-link">Условия договора</a>
+                    </label>
+                    <button class="button" type="submit">Отправить</button>
+                </form>
             </div>
         </div>
         <script src="js/modal.js"></script>

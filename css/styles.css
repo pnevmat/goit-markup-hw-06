@@ -464,3 +464,64 @@
 .modal-content {
     color: var(--primary-text-color);
 }
+.modal-header {
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+.modal-label {
+    display: block;
+    margin-bottom: 4px;
+
+    color: #757575;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+}
+.modal-iput {
+    width: 100%;
+    height: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 42px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+.modal-comment {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+}
+.modal-comment::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+}
+.modal-checkbox {
+    margin-right: 8px;
+    margin-bottom: 30px;
+}
+.checkbox.modal-label {
+    display: inline;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+.modal-link {
+    color: var(--primary-page-color);
+}
+.modal-content .button {
+    display: inline;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
