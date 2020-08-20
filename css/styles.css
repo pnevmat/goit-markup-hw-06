@@ -461,7 +461,15 @@
     height: 11px;
     fill: #000000;
 }
+.modal-button:hover,
+.modal-button:focus,
+.modal-button:hover .icon,
+.modal-button:focus .icon {
+    fill: var(--primary-page-color);
+    cursor: pointer;
+}
 .modal-content {
+    position: relative;
     color: var(--primary-text-color);
 }
 .modal-header {
@@ -478,6 +486,7 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
+    cursor: pointer;
 }
 .modal-iput {
     width: 100%;
@@ -488,6 +497,27 @@
     margin-bottom: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    cursor: pointer;
+}
+.modal-content .icon {
+    position: absolute;
+    top: 64px;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    fill: #212121;
+}
+.icon.phone {
+    top: calc(64px + 68px);
+}
+.icon.email {
+    top: calc(64px + 68px * 2);
+}
+.modal-iput:focus,
+.modal-iput:focus + .icon {
+    outline: none;
+    border-color: var(--primary-page-color);
+    fill: var(--primary-page-color);
 }
 .modal-comment {
     width: 100%;
@@ -504,7 +534,13 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
 }
+.modal-comment:focus {
+    outline: none;
+    border-color: var(--primary-page-color);
+}
 .modal-checkbox {
+    width: 16px;
+    height: 15px;
     margin-right: 8px;
     margin-bottom: 30px;
 }
@@ -513,6 +549,12 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+}
+.icon.square {
+    width: 16px;
+    height: 15px;
+    top: calc((64px + 68px * 2) + 202px);
+    left: 0;
 }
 .modal-link {
     color: var(--primary-page-color);

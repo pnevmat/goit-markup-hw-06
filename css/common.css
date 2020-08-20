@@ -220,7 +220,40 @@ ul {
 .ul.subscribe {
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 94px;   
+     margin-left: 93px;  
+}
+.footer-label {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.footer-input {
+    width: 358px;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: #2F303A;
+    cursor: pointer;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.footer-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.subscribe .icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
 }
 .ul .footer-item:not(:last-child) {
     margin-right: 10px;
