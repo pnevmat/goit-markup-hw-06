@@ -46,7 +46,7 @@
     </header>
     <main class="main">
         <div class="conteiner customize">
-            <h1>Портфолио</h1>
+            <h1 class="hidden">Портфолио</h1>
             <ul class="ul">
                 <li class="portfolio-item"><button type="button" class="portfolio-button">Все</button></li>
                 <li class="portfolio-item"><button type="button" class="portfolio-button">Веб-сайты</button></li>
@@ -205,7 +205,7 @@
         </div>
     </main>
     <footer class="footer">
-        <h2 class="footer section-header">Свяжитесь с нами</h2>
+        <h2 class="footer section-header hidden">Свяжитесь с нами</h2>
         <div class="footer-conteiner ul">
             <div class="ul address">
                 <a href="./index.html" class="logo footer-logo">
@@ -254,10 +254,19 @@
                     </li>
                 </ul>
             </div>
-            <div class="ul subscribe">
-                <h3 class="features">Подпишитесь на рассылку</h3>
-                <a href="./" class="button">Подписаться</a>
-            </div>
+            <form class="ul subscribe">
+                <label class="footer-label" for="delivery-mail">Подпишитесь на рассылку</label>
+                <div class="ul">
+                    <input class="footer-input" type="email" id="delivery-mail" name="delivery-mail" placeholder="E-mail">
+                    <button class="button" type="submit">
+                        Подписаться
+                        <svg class="icon">
+                            <use href="./img/symbol-defs2.svg#icon-send">
+                            </use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </footer>
 </body>
